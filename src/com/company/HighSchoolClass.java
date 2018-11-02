@@ -1,21 +1,19 @@
 package com.company;
-import java.util.*;
-import java.util.Arrays;
 
 public class
 HighSchoolClass
 {
     private Student [] students;
     public double gpa;
-    public String valedictorian;
+    public Student valedictorian;
 
 
     //constructors and other data fields not shown
     //Show them!
 
-    public HighSchoolClass(double a[]) {
+    public HighSchoolClass(Student a[]) {
 
-        students = a[];
+        students = a;
 
     }
 
@@ -25,15 +23,14 @@ HighSchoolClass
     public Student getValedictorian ()
     {
 
-        for(int i : students) {
+        for(Student i : students) {
 
-        if (students[i].getGPA() > gpa) {
+        if (i.getGPA() > gpa) {
 
-            gpa = students[i].getGPA();
-            valedictorian = students[i];
+            gpa = i.getGPA();
+            valedictorian = i;
 
         }
-        i =+;
     }
         return valedictorian;
     }
@@ -43,14 +40,13 @@ HighSchoolClass
         int honorsStudents = 0;
         double percent;
 
-        for (int a : students){
+        for (Student a : students){
 
-        if(students[a].isHonors()) {
+        if(a.isHonors()) {
 
             honorsStudents += 1;
 
         }
-            a +=;
     }
         percent = (honorsStudents / students.length) * 100;
         return percent;

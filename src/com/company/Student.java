@@ -1,5 +1,4 @@
 package com.company;
-import java.util.*;
 
 
 public class Student {
@@ -29,20 +28,16 @@ public class Student {
     public boolean isHonors()
     {
 
-        for (double j : students) {
+        for (Student j : students) {
 
-        if (students[j].getGPA() >= 3.0) {
+        if (j.getGPA() >= 3.0) {
 
             return true;
 
-        } else {
-
-            return false;
-
         }
-            j +=;
 
     }
+    return false;
 
     }
 
