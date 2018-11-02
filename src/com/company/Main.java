@@ -18,8 +18,8 @@ public class Main {
 
         HighSchoolClass hsc = new HighSchoolClass(students);
 
-        System.out.println(hsc.getValedictorian().getGPA());
-        System.out.println(hsc.getHonorsPercentage());
+        System.out.println("The GPA of the class Valedictorian is: " + hsc.getValedictorian().getGPA());
+        System.out.println("The percent of honors students in the grade is: " + hsc.getHonorsPercentage());
 
 
     }
